@@ -23,8 +23,8 @@ const Home = () => {
             <h1 className="main-heading">Planets</h1>
             {planet.map((planet) => {
                 return (
-                    <NavLink to={`/planets${planet._id}`}>
-                        <div className="planet-card" key={planet._id}>
+                    <NavLink to={`/planets${planet._id}`} >
+                        <div className="planet-card">
                             <img src={planet.images.planet} className="planet-img" alt="" />
                             <h3 className="medium-heading">{planet.name}</h3>
                         </div>

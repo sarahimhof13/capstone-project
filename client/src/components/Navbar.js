@@ -47,11 +47,6 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-            <div className={`hamburger ${hamburgerOpen ? "active" : ""}`} onClick={hamburgerClick}>
-                <span className="mobile-bar"></span>
-                <span className="mobile-bar"></span>
-                <span className="mobile-bar"></span>
-            </div>
         </nav>
     );
 };
