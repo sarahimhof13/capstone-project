@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // components
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
+import PlanetPage from "./components/PlanetPage";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/planets" element={<Home />} />
-            <Route path="/planets:_id" />
+            <Route path="/planets:_id" element={<PlanetPage />}/>
             <Route path="/planets/add" />
             <Route path="/planets:_id/edit" />
         </Routes>
