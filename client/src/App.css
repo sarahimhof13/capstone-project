@@ -224,6 +224,41 @@ a, button, span {
     text-align: center;
   }
 
+  /* Card styling */
+.side-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  max-width: 350px;
+}
+
+.card h1 {
+  margin-bottom: 23px;
+}
+
+.card p {
+  margin-bottom: 24px;
+}
+
+.source-link {
+  font-family: var(--body-font);
+  color: var(--transparent-white-color);
+  font-size: 0.875rem;
+  margin-bottom: 39px;
+  cursor: pointer;
+}
+
+.source-link a {
+  font-weight: 700;
+  color: var(--transparent-white-color);
+}
+
+.card-buttons {
+  margin-top: 16px;
+}
+
   /* Buttons */
 .default-button {
     width: 292px;
