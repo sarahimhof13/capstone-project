@@ -255,3 +255,12 @@ a, button, span {
   #button-number {
     color: var(--transparent-white-color);
   }
+
+  /* Stats container */
+.stats-container {
+    border: 1px solid var(--transparent-white-color);
+    padding: 20px 23px;
+    width: 207px;
+    height: 86px;
+  }
+  
