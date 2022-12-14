@@ -41,10 +41,6 @@ const Navbar = () => {
               </li>
             )
           })}
-          <li>
-            <NavLink className="navbar-links" id="add-planet-link" to="/planets/add">Add a Planet</NavLink>
-            <img src="/assets/icon-chevron.svg" alt="arrow icon" className="arrow-icon"/>
-          </li>
         </ul>
       </div>
       <div className={`hamburger ${hamburgerOpen ? "active" : ""}`} onClick={hamburgerClick}>
