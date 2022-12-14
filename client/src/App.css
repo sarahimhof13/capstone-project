@@ -193,3 +193,33 @@ a, button, span {
     bottom: -30px;
     background: none;
   }
+
+  /* Styling for home page */
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 165px;
+  }
+  
+  .home-container h1 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  .planet-card {
+    border: 1px solid var(--medium-grey-color);
+    margin: 16px;
+    padding: 20px;
+    min-width: 160px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .planet-card h3 {
+    text-transform: uppercase;
+    text-align: center;
+  }
