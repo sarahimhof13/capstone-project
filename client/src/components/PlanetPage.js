@@ -3,7 +3,7 @@ import Stats from "./Stats";
 import Card from "./Card";
 import Button from "./DefaultButton";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 function PlanetPage() {
     // Function to get planet by ID
@@ -68,7 +68,7 @@ function PlanetPage() {
                         <div className="img-container">
                             <img className="main-planet-img" src={overviewButton ? planet.images.planet
                                 : structureButton ? planet.images.internal : planet.images.planet} alt="" />
-                            <img src={geologyButton && planet.images.geology} alt="" className="geology-img"/>
+                            <img src={geologyButton && planet.images.geology} alt="" className="geology-img" />
                         </div>
                         {/* Container for side card containing planet info */}
                         <div className="side-card">
@@ -88,6 +88,10 @@ function PlanetPage() {
                                     <Button number="01" description="Overview" onClick={() => handleClickOverview()} backgroundColor={{ backgroundColor: overviewButton ? planet.color : "" }} />
                                     <Button number="02" description="Internal Structure" onClick={() => handleClickInternal()} backgroundColor={{ backgroundColor: structureButton ? planet.color : "" }} />
                                     <Button number="03" description="Surface Geology" onClick={() => handleClickGeology()} backgroundColor={{ backgroundColor: geologyButton ? planet.color : "" }} />
+                                </div>
+                                {/* Container to update planet button */}
+                                <div className="modify-button-container card-buttons">
+                                    <Link to={`/planets${planet._id}/edit`} name="Update" className="modify-button update-link" >Update </Link>
                                 </div>
                             </div>
                         </div>
