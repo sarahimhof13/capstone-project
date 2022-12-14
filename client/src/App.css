@@ -223,3 +223,35 @@ a, button, span {
     text-transform: uppercase;
     text-align: center;
   }
+
+  /* Buttons */
+.default-button {
+    width: 292px;
+    text-align: left;
+    padding: 10px 28px;
+    border: 1px solid var(--medium-grey-color);
+    margin-top: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: 0.875rem;
+    display: block;
+  }
+  
+  .default-button:hover {
+    background-color: var(--dark-grey-color);
+    transition: inherit;
+  }
+  
+  .default-button span {
+    display: inline;
+    padding-right: 25px;
+    font-family: var(--body-font);
+    font-weight: 700;
+    color: var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: 0.161rem;
+  }
+  
+  #button-number {
+    color: var(--transparent-white-color);
+  }
