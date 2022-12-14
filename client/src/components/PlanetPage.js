@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 import Stats from "./Stats";
 import Card from "./Card";
 import Button from "./DefaultButton";
+import ModifyButton from "./ModifyButton";
 import axios from "axios";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 
 function PlanetPage() {
     // Function to get planet by ID
@@ -50,6 +51,20 @@ function PlanetPage() {
         setGeologyButton(true);
     }
 
+    const navigate = useNavigate();
+
+    // Async function to delete a planet
+
+    async function handleDelete() {
+        try {
+            await axios.delete(`/planets/${_id}`);
+            navigate("/planets");
+            window.location.reload()
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
     return (
         <main>
             {planet ? (
@@ -91,6 +106,7 @@ function PlanetPage() {
                                 </div>
                                 {/* Container to update planet button */}
                                 <div className="modify-button-container card-buttons">
+                                <ModifyButton name="Delete" onClick={() => handleDelete()} backgroundColor={{ backgroundColor: '#cd5120' }} />
                                     <Link to={`/planets${planet._id}/edit`} name="Update" className="modify-button update-link" >Update </Link>
                                 </div>
                             </div>

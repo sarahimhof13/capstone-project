@@ -54,7 +54,7 @@ function EditPlanet() {
         async function updatePlanet() {
             try {
                 await axios.patch(`/planets/${planet._id}`, planet);
-                navigate(`/planets/${planet._id}`);
+                navigate(`/planets${planet._id}`);
                 window.location.reload()
             } catch (error) {
                 console.log(error);
