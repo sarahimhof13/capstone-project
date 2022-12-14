@@ -39,7 +39,7 @@ function AddPlanet() {
         async function postPlanet() {
             try {
                 const response = await axios.post("/planets", planet);
-                navigate(`/planets/${response.data._id}`);
+                navigate(`/planets${response.data._id}`);
                 window.location.reload()
             } catch (error) {
                 console.log("error", error);
