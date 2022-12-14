@@ -3,8 +3,7 @@ import Stats from "./Stats";
 import Card from "./Card";
 import Button from "./DefaultButton";
 import axios from "axios";
-import { Link, useNavigate, useParams } from "react-router-dom";
-import ModifyButton from "./ModifyButton";
+import { useParams } from "react-router-dom";
 
 function PlanetPage() {
     // Function to get planet by ID
