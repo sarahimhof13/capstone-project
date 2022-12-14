@@ -1,0 +1,143 @@
+/* Importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@400;700&display=swap");
+
+:root {
+  /* Colors */
+  --white-color: #ffffff;
+  --transparent-white-color: rgba(255, 255, 255, 0.5);
+  --dark-blue-color: #070724;
+  --dark-grey-color: #38384f;
+  --medium-grey-color: #838391;
+  --light-grey-color: #;
+  --greyish-blue-color: #419ebb;
+  --yellow-color: #eda249;
+  --purple-color: #6f2ed6;
+  --light-red-color: D14C32;
+  --red-color: #d83a34;
+  --burnt-orange-color: #cd5120;
+  --cyan-green-color: #1ec2a4;
+  --blue-color: #2d68f0;
+
+  /* Fonts */
+  --heading-font: "Antonio", sans-serif;
+  --body-font: "League Spartan", sans-serif;
+}
+
+
+/* General Styles & CSS Reset*/
+* {
+  margin: 0;
+  background: var(--dark-blue-color) url(/public/assets/background-stars.svg);
+}
+
+a, button, span {
+  all: unset;
+}
+
+.main-heading {
+  color: var(--white-color);
+  font-family: var(--heading-font);
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 6.438rem;
+  text-transform: uppercase;
+}
+
+.medium-heading {
+  color: var(--white-color);
+  font-family: var(--heading-font);
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 3.25rem;
+  letter-spacing: -0.094rem;
+}
+
+.small-heading {
+  color: var(--white-color);
+  font-family: var(--body-font);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.563rem;
+  letter-spacing: 0.163rem;
+}
+
+.sub-heading {
+  color: var(--transparent-white-color);
+  font-family: var(--body-font);
+  font-size: 0.688rem;
+  font-weight: 700;
+  line-height: 1.563rem;
+  letter-spacing: 0.063rem;
+  text-transform: uppercase;
+}
+
+.body-text {
+  color: var(--white-color);
+  font-family: var(--body-font);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.563rem;
+  letter-spacing: 0.016rem;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 32px;
+  border-bottom: 1px solid var(--medium-grey-color);
+  color: var(--white-color);
+}
+
+.navbar-title {
+  font-family: var(--heading-font);
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hamburger {
+  display: none;
+}
+
+.arrow-icon {
+  display: none;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.navbar-list-active {
+  display: none;
+}
+
+.mobile-nav-planet {
+  display: none;
+}
+
+.navbar-links {
+  list-style: none;
+  color: var(--transparent-white-color);
+  cursor: pointer;
+}
+
+.navbar-links:hover {
+  color: var(--white-color);
+  transition: 0.3s;
+  border-top: 4px solid;
+  position: relative;
+  padding-top: 31px;
+}
+
+.button-container-mobile {
+  display: none;
+}
