@@ -34,6 +34,7 @@ function EditPlanet() {
     const { _id } = useParams();
     const navigate = useNavigate();
 
+    // function to get planet by ID
     useEffect(
         function () {
             async function updatePlanet() {
@@ -49,6 +50,7 @@ function EditPlanet() {
         [_id]
     );
 
+    //  function to update planet details on submission
     function handleSubmit(event) {
         event.preventDefault();
         async function updatePlanet() {
@@ -63,6 +65,7 @@ function EditPlanet() {
         updatePlanet();
     }
 
+    // Function to access nested object in database
     const handleChange = level => event => {
         if (!level) {
             // Assume root level
@@ -83,7 +86,7 @@ function EditPlanet() {
 
     //   Function to cancel editing a planet
     function handleCancel() {
-        navigate(`/planet/${planet._id}`);
+        navigate(`/planets${planet._id}`);
     }
 
     return (
@@ -109,7 +112,7 @@ function EditPlanet() {
                         onChange={handleChange()}
                         className="form-input"
                     />
-                    <small className="body-text">Format: HEX code</small>
+                    <small className="body-text">Format: HEX code or color name e.g 'red'</small>
                 </div>
                 <div className="form-group">
                     <h3 className="medium-heading">Overview</h3>
@@ -220,7 +223,7 @@ function EditPlanet() {
                 </div>
                 <div className="form-group">
                     <h3 className="medium-heading">Images</h3>
-                    <small className="body-text">Format: ./assets/FILENAME</small>
+                    <small className="body-text">Format: Link to image</small>
                     <label className="sub-heading">Planet</label>
                     <input
                         name="planet"

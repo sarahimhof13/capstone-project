@@ -17,10 +17,11 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/planets" element={<Home />} />
-            <Route path="/planets:_id" element={<PlanetPage />}/>
-            <Route path="/planets/add" element={<AddPlanet />}/>
-            <Route path="/planets:_id/edit" element={<EditPlanet />} />
+          <Route  path="/" element={<Home />} />
+          <Route  path="/planets" element={<Home />} />
+          <Route  path="planets:_id" element={<PlanetPage />} />
+          <Route  path="/planets/add" element={<AddPlanet />} />
+          <Route  path="/planets:_id/edit" element={<EditPlanet />} />
         </Routes>
       </BrowserRouter>
     </div>

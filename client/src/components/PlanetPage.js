@@ -16,7 +16,7 @@ function PlanetPage() {
         function () {
             async function getPlanetById() {
                 try {
-                    const response = await axios.get(`planets/${_id}`);
+                    const response = await axios.get(`/planets/${_id}`);
                     setPlanet(response.data);
                 } catch (error) {
                     console.log("error", error);

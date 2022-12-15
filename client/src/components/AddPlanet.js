@@ -48,6 +48,7 @@ function AddPlanet() {
         postPlanet();
     }
 
+    // Function to access nested object in database
     const handleChange = level => event => {
         if (!level) {
           // Assume root level
@@ -96,7 +97,7 @@ function AddPlanet() {
                         onChange={handleChange()}
                         className="form-input"
                     />
-                    <small className="body-text">Format: HEX code</small>
+                    <small className="body-text">Format: HEX code or color name e.g 'red'</small>
                 </div>
                 <div className="form-group">
                     <h3 className="medium-heading">Overview</h3>
@@ -206,7 +207,7 @@ function AddPlanet() {
                 </div>
                 <div className="form-group">
                     <h3 className="medium-heading">Images</h3>
-                    <small className="body-text">Format: ./assets/FILENAME</small>
+                    <small className="body-text">Format: Link to image</small>
                     <label className="sub-heading">Planet</label>
                     <input
                         name="planet"

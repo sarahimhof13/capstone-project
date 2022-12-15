@@ -147,7 +147,7 @@ a, button, span {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 126px 165px;
+    margin: 126px 165px 30px 126px;
   }
   
   .main-section {
@@ -251,7 +251,8 @@ a, button, span {
 }
 
 .source-link a {
-  font-weight: 700;
+  font-weight: 600;
+  text-decoration: underline;
   color: var(--transparent-white-color);
 }
 
@@ -263,7 +264,7 @@ a, button, span {
 .default-button {
     width: 292px;
     text-align: left;
-    padding: 10px 28px;
+    padding: 14px 28px;
     border: 1px solid var(--medium-grey-color);
     margin-top: 16px;
     cursor: pointer;
@@ -297,7 +298,7 @@ a, button, span {
   }
   
   .modify-button {
-    padding: 10px 28px;
+    padding: 14px 28px;
     font-family: var(--body-font);
     font-weight: 700;
     color: var(--white-color);
@@ -398,7 +399,7 @@ a, button, span {
   }
 
   .page-container {
-    margin: 50px 40px;
+    margin: 50px 40px 20px 40px;
     flex-direction: column;
   }
 
@@ -418,6 +419,10 @@ a, button, span {
 
   .navbar-title {
     margin-bottom: 39px;
+  }
+
+  .navbar-links {
+    font-size: 0.688rem;
   }
 
   .navbar-links:hover {
@@ -443,7 +448,8 @@ a, button, span {
   }
 
   .card h1 {
-    margin-bottom: 0;
+    margin-bottom: 16px;
+    line-height: normal;
   }
 
   .card p {
