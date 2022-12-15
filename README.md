@@ -5,7 +5,7 @@
 * [Setup](#setup)
 
 ## General Info
-This a full stack responsive web application for planets facts that performs CRUD operations
+This a full stack responsive web application for a planetary learning resource that performs CRUD operations
 
 ## Technologies
 Project is created using:
