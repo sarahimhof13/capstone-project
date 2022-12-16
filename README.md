@@ -23,7 +23,8 @@ Project is created using:
 
 To run this project, install it locally with npm. 
 
-In the server folder create a new file called '.env' and add your Mongo URI. Example: **MONGO_URI = mongodb+srv://<username>:<password>@cluster0.tzgj2td.mongodb.net/<databasename>**
+* In the server folder create a new file called '.env' and add your Mongo URI. Example: **MONGO_URI = mongodb+srv://<username>:<password>@cluster0.tzgj2td.mongodb.net/<databasename>**
+* Add 'PORT = 4000' to the env file
 
 open a new terminal
 
